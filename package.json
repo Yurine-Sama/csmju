@@ -1,0 +1,75 @@
+{
+  "name": "vue-notus",
+  "version": "1.1.0",
+  "description": "Vue Notus - A free Tailwind CSS and VueJS UI Kit and Admin by Creative Tim.",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build && gulp licenses",
+    "lint": "vue-cli-service lint",
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "@ocrv/vue-tailwind-pagination": "0.0.4",
+    "@popperjs/core": "2.9.1",
+    "@tailwindcss/forms": "0.2.1",
+    "@vue/compiler-sfc": "3.0.7",
+    "@vuelidate/core": "^2.0.0-alpha.32",
+    "@vuelidate/validators": "^2.0.0-alpha.25",
+    "axios": "^0.21.1",
+    "chart.js": "2.9.4",
+    "core-js": "3.9.1",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "html2canvas": "^1.4.0",
+    "moment": "^2.29.1",
+    "tailwindcss": "2.0.4",
+    "v-calendar": "^3.0.0-alpha.5",
+    "vue": "3.0.7",
+    "vue-router": "4.0.5",
+    "vue-sweetalert2": "^5.0.2",
+    "vue3-carousel": "^0.1.30",
+    "vue3-recaptcha2": "^1.2.0",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.13.10",
+    "@babel/eslint-parser": "7.13.10",
+    "@vue/cli-plugin-babel": "5.0.0-alpha.7",
+    "@vue/cli-plugin-eslint": "5.0.0-alpha.7",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "5.0.0-alpha.7",
+    "autoprefixer": "10.2.5",
+    "eslint": "7.22.0",
+    "eslint-plugin-vue": "7.7.0",
+    "postcss": "8.2.8",
+    "vue-template-compiler": "2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "homepage": "https://demos.creative-tim.com/vue-notus/",
+  "license": "MIT",
+  "repository": "https://github.com/creativetimofficial/vue-notus"
+}
